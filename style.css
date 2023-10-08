@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 5fr;
+}
+
+.header {
+    grid-column: 2 / 3;
+    background-color: #283618;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: #fefae0;
+}
+
+.main-content {
+    background-color: #606c38;
+}
+
+.sidebar-title {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.sidebar-options {
+    margin-left: -20px;
+}
+
+.options1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn-home,
+.btn-profile,
+.btn-messages,
+.btn-history,
+.btn-tasks,
+.btn-communities,
+.btn-settings,
+.btn-support,
+.btn-privacy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #fefae0;
+    cursor: pointer;
+} 
+
+.icon {
+    width: 1.8rem;
+}
